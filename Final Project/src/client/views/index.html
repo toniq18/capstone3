@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Weather Journal</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+ <body>
+    <div id = "app">
+
+        <div class ="headline">Travel Planner</div>
+
+            <div class ="holder">
+                <h4 for="zip" id="monkey">Enter Your Destination Here</h4>
+                <input type="text" id="city" placeholder="Destination">
+            </div>
+
+            <div class ="holder1"></div>
+
+            <div>
+                <h4 id="monkey2">Enter Your Departure Date</h4>
+                <textarea class= "Input" id="date" placeholder="MM/DD/YYYY"></textarea>
+            </div>
+
+            <button id="generate" type = "submit"> Enter </button>
+
+            <div class ="holder2">
+                <div class = "title">Most Recent Entry</div>
+                <div id = "entryHolder"></div>
+                <div id = "latitude"></div> 
+                <div id = "longitude"></div>
+                <div id = "country"></div>
+                <div id = "daysuntill"></div>
+            </div>
+
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+           </script>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+body{
+    background-position: center;
+    background-size: cover
+}
+
+.logo{
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.nav{
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.headline{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.8cm;
+    font-weight: 600;
+}
+
